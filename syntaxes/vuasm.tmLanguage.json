@@ -37,7 +37,7 @@
 			"patterns": [
 				{
 					"name": "variable.parameter.microprogram",
-					"match": "(?i)\\b(VF(?:0[0-9]|1\\d|2[0-9]|3[01])(?:[xyzw]+)?|VI(?:0[0-9]|1[0-6]|)|P|I|Q)\\b"
+					"match": "(?i)\\b(VF(?:0[0-9]|1\\d|2[0-9]|3[01])(?:[xyzw]+)?|VI(?:0[0-9]|1[0-6]|)|P|I|Q)|ACC(?:[xyzw]+)\\b"
 				}
 			]
 		},
@@ -85,12 +85,31 @@
 				"match": "(?i)\\b(opmsub|opmula|clipw)(?:\\.?xyz+)?\\b"
 			},
 			{
-				"name": "keyword.control.microprogram",
-				"match": "(?i)\\b((abs|add|addi|addq|adda|addao|addaq|ftoi0|ftoi4|ftoi12|ftoi15|itof0|itof12|itof15|madd|maddi|maddq|madda|maddai|maddaq|max|maxi|mini|minii|msub|msubi|msubq|msuba|msubai|msubaq|mul|muli|mulq|mula|mulai|mulaq|sub|subi|subq|suba|subai|subaq)(?:\\.[xyzw]+)?)\\b"
+				"name": "variable.parameter.microprogram",
+				"match": "(?i)\\b((abs|add|addi|addq|adda|addao|addaq|ftoi0|ftoi4|ftoi12|ftoi15|itof0|itof12|itof15|madd|maddi|maddq|madda|maddai|maddaq|max|maxi|mini|minii|msub|msubi|msubq|msuba|msubai|msubaq|mul|muli|mulq|mula|mulai|mulaq|sub|subi|subq|suba|subai|subaq)(?:\\.[xyzw]+)?)\\b",
+				"captures": {
+					"1": {
+						"name": "variable.parameter.microprogram"
+					},
+					"2": {
+						"name": "keyword.control.microprogram"
+					}
+				}
 			},
 			{
-				"name": "keyword.control.microprogram",
-				"match": "(?i)\\b(add|adda|madd|madda|maxi|mini|msub|msuba|mul|mula|sub|suba)(?:[xyzw])(?:\\.[xyzw]+)?\\b"
+				"name": "variable.parameter.microprogram",
+				"match": "(?i)\\b(add|adda|madd|madda|maxi|mini|msub|msuba|mul|mula|sub|suba)(?:[xyzw])(?:\\.[xyzw]+)?\\b",
+				"captures": {
+					"1": {
+						"name": "keyword.control.microprogram"
+					},
+					"2": {
+						"name": "variable.parameter.microprogram"
+					},
+					"3": {
+						"name": "variable.parameter.microprogram"
+					}
+				}
 			}
 		]
 		},
