@@ -1,0 +1,42 @@
+{
+  "name": "vector-unit-assembly",
+  "displayName": "Vector Unit Assembly",
+  "description": "Language support for Vector Unit Assembly",
+  "version": "0.0.1",
+  "icon": "logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f0bes/vector-unit-assembly"
+  },
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vuasm",
+        "aliases": [
+          "Vector Unit Assembly",
+          "vuasm"
+        ],
+        "extensions": [
+          ".vsm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vuasm",
+        "scopeName": "source.microprogram",
+        "path": "./syntaxes/vuasm.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
