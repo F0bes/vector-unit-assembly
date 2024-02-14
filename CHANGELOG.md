@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.0.3]
+(Wanted to try vsce publish patch)
+### Fixed
+- Whitespace in LICENSE
+
 ## [0.0.2]
 
 ### Added

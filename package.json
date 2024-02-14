@@ -2,12 +2,13 @@
   "name": "vector-unit-assembly",
   "displayName": "Vector Unit Assembly",
   "description": "Language support for Vector Unit Assembly",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/f0bes/vector-unit-assembly"
   },
+  "publisher": "TyLamontagne",
   "engines": {
     "vscode": "^1.86.0"
   },
