@@ -2,7 +2,7 @@
   "name": "vector-unit-assembly",
   "displayName": "Vector Unit Assembly",
   "description": "Language support for Vector Unit Assembly",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "logo.png",
   "repository": {
     "type": "git",
